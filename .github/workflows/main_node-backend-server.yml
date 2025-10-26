@@ -6,7 +6,7 @@ name: Build and deploy Node.js app to Azure Web App - node-backend-server
 on:
   push:
     branches:
-      - main
+      - backend-server
   workflow_dispatch:
 
 jobs:
@@ -62,4 +62,5 @@ jobs:
           app-name: 'node-backend-server'
           slot-name: 'Production'
           package: .
+
           
